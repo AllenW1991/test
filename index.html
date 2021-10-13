@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="search"></input>
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="side_show" id="slide_show_outer">
+            <ul id="ad_lists">
+                <li><img src='https://picsum.photos/1000/300?random=1' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=2' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=3' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=4' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=5' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=6' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=7' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=8' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=9' alt=""></li>
+                <li><img src='https://picsum.photos/1000/300?random=10' alt=""></li>
+            </ul>
+
+            <div id="arrow" class="next_prev">
+                <i class="fas fa-chevron-left prev" id="prev"></i>
+                <i class="fas fa-chevron-right next" id="next"></i>
+            </div>
+
+            <div id="nav" class="dots">
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+                <a></a>
+
+            </div>
+        </div>
+
+        <div class="count_down"></div>
+        <div class="products">
+            <div class="product_class"></div>
+            <div class="product_list">
+                <ul>
+                    <li>
+                        <input type="checkbox"><img src='https://picsum.photos/100/100?random=1' alt="product"
+                            style="border-radius: 8px;">
+                        <p>1</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./test.js"></script>
+
+</body>
+
+</html>
