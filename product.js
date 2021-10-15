@@ -16,4 +16,19 @@ $(document).ready(function () {
         $(this).closest("li").toggleClass("product_selected");
         $(this).closest("li").toggleClass("overlay");
     })
-});
+
+    $(".fa-times-circle").on("click", function () {
+        $("#search").val("");
+    })
+
+    $(".fa-search").on("click", function () {
+        let class_num = $("#search").val();
+        console.log($(".product_list>ul>li[id!=" + class_num + "]"));
+        $(".product_list>ul>li").removeClass("unselected");
+        $(".product_list>ul>li[id!=" + class_num + "]").addClass("unselected");
+    })
+})
+
+
+
+
