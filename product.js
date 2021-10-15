@@ -28,8 +28,8 @@ $(document).ready(function () {
         $(".product_list>ul>li[id!=" + class_num + "]").addClass("unselected");
 
     })
-    $(".go_top").on("click", function (e) {
-        scroll(0, 0);
+    $(".go_top").on("click", function () {
+        $('html,body').animate({ scrollTop: $('.container').offset().top }, 400);
     });
 
 })
