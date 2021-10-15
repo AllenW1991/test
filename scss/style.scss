@@ -5,6 +5,17 @@ body {
 .container {
     width: 960px;
     margin: 0 auto;
+    position: relative;
+    h1{
+        color: white;
+        font-size: 48px;
+        padding: 8px 0px;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        margin-right: 16px;
+    }
     .side_show {
         position: relative;
         width: 960px;

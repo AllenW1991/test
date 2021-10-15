@@ -13,6 +13,40 @@ window.onload = function () {
     var prev = document.getElementById("prev");
     next_prev()
 
+    function paddedFormat(num) {
+        return num < 10 ? "0" + num : num;
+    }
+
+    function startCountDown(duration, element) {
+
+        let secondsRemaining = duration;
+        let min = 0;
+        let sec = 0;
+
+        let countInterval = setInterval(function () {
+
+            min = parseInt(secondsRemaining / 60);
+            sec = parseInt(secondsRemaining % 60);
+
+            element.textContent = `${paddedFormat(min)}:${paddedFormat(sec)}`;
+
+            secondsRemaining = secondsRemaining - 1;
+            if (secondsRemaining < 0) { clearInterval(countInterval) };
+
+        }, 1000);
+    }
+
+        let time_minutes = 30; 
+        let time_seconds = 00; 
+
+        let duration = time_minutes * 60 + time_seconds;
+
+        element = document.querySelector('#count-down-timer');
+        element.textContent = `${paddedFormat(time_minutes)}:${paddedFormat(time_seconds)}`;
+
+        startCountDown(--duration, element);
+    
+
     for (i = 0; i < ads.length; i++) {
         ads[i].num = i;
         ads[i].onclick = function () {
@@ -69,3 +103,4 @@ window.onload = function () {
         }
     }
 };
+
