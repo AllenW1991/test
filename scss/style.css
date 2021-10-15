@@ -18,6 +18,17 @@ body {
   position: relative;
 }
 
+.container .go_top {
+  cursor: pointer;
+  position: fixed;
+  right: 16px;
+  bottom: 32px;
+}
+
+.container .go_top img {
+  border-radius: 50%;
+}
+
 .container .products {
   margin: 0;
   width: 960px;

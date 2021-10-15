@@ -26,7 +26,12 @@ $(document).ready(function () {
         console.log($(".product_list>ul>li[id!=" + class_num + "]"));
         $(".product_list>ul>li").removeClass("unselected");
         $(".product_list>ul>li[id!=" + class_num + "]").addClass("unselected");
+
     })
+    $(".go_top").on("click", function (e) {
+        scroll(0, 0);
+    });
+
 })
 
 
