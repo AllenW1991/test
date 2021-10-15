@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     $(".product_list>ul>li>span>input").on("click", function () {
-        this.closest("li").toggleClass("product_selected");
-        console.log(this);
+        $(this).closest("li").toggleClass("product_selected");
+        $(this).closest("li").toggleClass("overlay");
     })
 });
